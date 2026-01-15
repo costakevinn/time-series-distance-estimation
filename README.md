@@ -56,27 +56,27 @@ Selected figures from the paper and notebooks showing the data pipeline and mode
 
 ### Time Series → Frequency Transformation
 *(Lomb–Scargle applied to irregular time series)*  
-`![Lomb–Scargle](lomb_scargle_spectrum.png)`
+`![Lomb–Scargle](figures/lomb_scargle_spectrum.png)`
 
 ### Feature Engineering from Periodic Data
 *(Phase-folded time series)*  
-`![Phase Folded](phase_folded_timeseries.png)`
+`![Phase Folded](figures/phase_folded_timeseries.png)`
 
 ### Regression Model on Real Data
 *(Period–luminosity relationship learned from 4,700+ samples)*  
-`![Regression](regression_model.png)`
+`![Regression](figures/regression_model.png)`
 
 ### Model Validation vs Reference Dataset
 *(Comparison with OGLE-IV benchmark)*  
-`![Validation](model_validation.png)`
+`![Validation](figures/model_validation.png)`
 
 ### Probability Distributions
 *(Kernel density estimation of real measurements)*  
-`![Density](probability_density.png)`
+`![Density](figures/probability_density.png)`
 
 ### Model Response Curve
 *(How engineered features map to predicted distances)*  
-`![Model Response](feature_to_target_mapping.png)`
+`![Model Response](figures/feature_to_target_mapping.png)`
 
 ---
 
