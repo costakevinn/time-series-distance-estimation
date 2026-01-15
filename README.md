@@ -39,13 +39,13 @@ Although the application is astrophysical, the workflow directly maps to real-wo
 
 ## 📂 Repository Contents
 
-- **`paper.pdf`**  
+- **`docs/paper.pdf`**  
   Full scientific paper published on **NASA ADS (arXiv:2311.04470)** *(Portuguese)*
 
-- **`time_series_distance_pipeline.ipynb`**  
+- **`notebooks/time_series_distance_pipeline.ipynb`**  
   Core notebook implementing the full pipeline: data loading, Lomb–Scargle period detection, phase-folding, regression and distance estimation.
 
-- **`equation_43_derivation.ipynb`**  
+- **`notebooks/equation_43_derivation.ipynb`**  
   Supporting notebook with mathematical and statistical derivations used in the distance estimation model.
 
 ---
