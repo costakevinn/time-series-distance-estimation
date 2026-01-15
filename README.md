@@ -1,35 +1,35 @@
 # Time Series Distance Estimation  
 **Irregular time series analytics, data pipeline and statistical regression (NASA ADS / arXiv:2311.04470)**
 
-This repository contains the paper PDF and analysis notebooks for a project published on **NASA ADS (arXiv:2311.04470)** focused on building an end-to-end workflow for **irregular time series analysis** and **statistical modeling** using real observational data.
+This repository contains the paper PDF and analysis notebooks for a project published on **NASA ADS (arXiv:2311.04470)** that implements a complete **time series and statistical modeling pipeline** using real observational data.
 
-The paper is written in **Portuguese**, but the methodology, algorithms and results follow standard practices in **data science, time series processing and regression modeling**.
+The paper is written in **Portuguese**, but the methods, algorithms and results follow standard practices in **data science, time series analytics and regression modeling**.
 
 ---
 
 ## 🚀 Project Overview
 
-The goal of this project is to estimate distances using a large catalog of real observations by combining:
+The goal of this project is to estimate physical distances from **large-scale, irregular time series data** by combining:
 
 - **Irregular time series processing**
 - **Period detection** using **Lomb–Scargle periodograms (Astropy)**
 - **Phase-folding and feature extraction**
-- **Regression modeling** (period–luminosity relation / Leavitt Law)
+- **Supervised regression modeling** (period–luminosity relationship)
 - **Quality filtering and outlier handling**
 - **Validation against reference datasets (OGLE-IV)**
 
-The dataset contains **4,700+ real samples** from the **OGLE-IV** catalog of Classical Cepheid variable stars.
+The dataset contains **4,700+ real samples** from the **OGLE-IV** catalog.
 
-Although the application is astrophysical, this workflow is directly applicable to any domain involving **noisy, irregularly sampled time series** such as finance, IoT, monitoring systems, or operations analytics.
+Although the application is astrophysical, the workflow directly maps to real-world problems such as **financial time series, sensor data, monitoring systems and forecasting pipelines**.
 
 ---
 
 ## 🧠 Methods and Tools
 
 - **Time Series Analysis (irregular sampling)**
-- **Lomb–Scargle Periodogram** (Astropy)
-- **Phase-folding / periodic signal transformation**
-- **ETL and data cleaning**
+- **Lomb–Scargle Periodogram**
+- **Feature engineering from periodic signals**
+- **ETL and data preprocessing**
 - **Statistical regression** (SciPy `curve_fit`)
 - **Model validation and benchmarking**
 - **Kernel Density Estimation**
@@ -43,36 +43,40 @@ Although the application is astrophysical, this workflow is directly applicable 
   Full scientific paper published on **NASA ADS (arXiv:2311.04470)** *(Portuguese)*
 
 - **`time_series_distance_pipeline.ipynb`**  
-  Core notebook implementing the data pipeline, Lomb–Scargle period detection, phase-folding and regression modeling.
+  Core notebook implementing the full pipeline: data loading, Lomb–Scargle period detection, phase-folding, regression and distance estimation.
 
 - **`equation_43_derivation.ipynb`**  
-  Supporting notebook with mathematical and statistical derivations used in the distance estimation method.
+  Supporting notebook with mathematical and statistical derivations used in the distance estimation model.
 
 ---
 
 ## 📊 Visual Results
 
-Below are selected figures from the paper and notebooks illustrating the data pipeline and results:
+Selected figures from the paper and notebooks showing the data pipeline and model behavior.
 
-### Lomb–Scargle Periodogram
-*(Detecting periodicity in irregular time series)*  
+### Time Series → Frequency Transformation
+*(Lomb–Scargle applied to irregular time series)*  
 `![Lomb–Scargle](lomb_scargle_spectrum.png)`
 
-### Phase-Folded Time Series
-*(Feature engineering from periodic signals)*  
+### Feature Engineering from Periodic Data
+*(Phase-folded time series)*  
 `![Phase Folded](phase_folded_timeseries.png)`
 
-### Regression Model (Period–Luminosity Relation)
-*(Supervised regression on real data)*  
+### Regression Model on Real Data
+*(Period–luminosity relationship learned from 4,700+ samples)*  
 `![Regression](regression_model.png)`
 
-### Validation vs Reference Dataset (OGLE-IV)
-*(Benchmarking against external results)*  
+### Model Validation vs Reference Dataset
+*(Comparison with OGLE-IV benchmark)*  
 `![Validation](model_validation.png)`
 
-### Probability Density (Kernel Density Estimation)
-*(Distribution of real-world measurements)*  
+### Probability Distributions
+*(Kernel density estimation of real measurements)*  
 `![Density](probability_density.png)`
+
+### Model Response Curve
+*(How engineered features map to predicted distances)*  
+`![Model Response](feature_to_target_mapping.png)`
 
 ---
 
@@ -88,16 +92,17 @@ https://ui.adsabs.harvard.edu/abs/arXiv:2311.04470
 
 ## 🎯 Why this is relevant for Data & Machine Learning Engineering
 
-This project demonstrates real-world experience with:
+This project demonstrates hands-on experience with:
 
-- **Large, noisy datasets**
-- **Irregular time series**
-- **Data pipelines and preprocessing**
-- **Statistical modeling and regression**
-- **Model validation and benchmarking**
-- **Reproducible notebook-based analysis**
+- **Large, noisy real-world datasets**
+- **Irregular time series processing**
+- **Feature engineering**
+- **Supervised regression models**
+- **Data quality filtering**
+- **Benchmarking against external datasets**
+- **Reproducible Python pipelines**
 
-These are core skills required for **Machine Learning Engineers, Data Scientists and Data Engineers** working with production data.
+These are core skills required for **Machine Learning Engineers, Data Scientists and Data Engineers**.
 
 ---
 
