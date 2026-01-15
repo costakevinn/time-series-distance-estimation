@@ -1,37 +1,38 @@
 # Time Series Distance Estimation  
 **Irregular time series analytics, data pipeline and statistical regression (NASA ADS / arXiv:2311.04470)**
 
-This repository contains the PDF and notebooks for a project published on **NASA ADS (arXiv:2311.04470)** focused on building an end-to-end workflow for **irregular time series analysis** and **statistical modeling** using real observational data.
+This repository contains the paper PDF and analysis notebooks for a project published on **NASA ADS (arXiv:2311.04470)** focused on building an end-to-end workflow for **irregular time series analysis** and **statistical modeling** using real observational data.
 
-The paper is written in **Portuguese**, but the methodology, figures and results follow standard practices in **data analytics, time series processing and regression modeling**.
+The paper is written in **Portuguese**, but the methodology, algorithms and results follow standard practices in **data science, time series processing and regression modeling**.
 
 ---
 
 ## 🚀 Project Overview
 
-Goal: estimate distances using a large catalog of observations by combining:
+The goal of this project is to estimate distances using a large catalog of real observations by combining:
 
 - **Irregular time series processing**
-- **Period detection** using **Lomb–Scargle periodogram (Astropy)**
-- Feature extraction from periodic signals (phase-folding)
-- **Regression modeling** (period–luminosity / Leavitt Law) using **SciPy (curve_fit)**
-- Quality filtering and outlier handling to improve model reliability
-- Validation by comparing results with the **OGLE-IV** reference catalog
+- **Period detection** using **Lomb–Scargle periodograms (Astropy)**
+- **Phase-folding and feature extraction**
+- **Regression modeling** (period–luminosity relation / Leavitt Law)
+- **Quality filtering and outlier handling**
+- **Validation against reference datasets (OGLE-IV)**
 
-Dataset scale: **4709** Classical Cepheid variable stars from the **OGLE-IV** catalog.
+The dataset contains **4,700+ real samples** from the **OGLE-IV** catalog of Classical Cepheid variable stars.
 
-While the application is astrophysical, the workflow is directly transferable to any domain involving **noisy and irregularly sampled time series** (e.g., sensors/IoT, finance, operations, monitoring).
+Although the application is astrophysical, this workflow is directly applicable to any domain involving **noisy, irregularly sampled time series** such as finance, IoT, monitoring systems, or operations analytics.
 
 ---
 
-## 🧠 Techniques & Tools
+## 🧠 Methods and Tools
 
 - **Time Series Analysis (irregular sampling)**
 - **Lomb–Scargle Periodogram** (Astropy)
 - **Phase-folding / periodic signal transformation**
-- **ETL / data preprocessing**
-- **Regression and curve fitting** (SciPy `curve_fit`)
-- **Model validation and benchmarking** (comparison vs OGLE-IV)
+- **ETL and data cleaning**
+- **Statistical regression** (SciPy `curve_fit`)
+- **Model validation and benchmarking**
+- **Kernel Density Estimation**
 - **Python** (NumPy, Pandas, SciPy, Astropy)
 
 ---
@@ -39,35 +40,64 @@ While the application is astrophysical, the workflow is directly transferable to
 ## 📂 Repository Contents
 
 - **`paper.pdf`**  
-  Full paper published on **NASA ADS / arXiv:2311.04470** *(Portuguese)*
+  Full scientific paper published on **NASA ADS (arXiv:2311.04470)** *(Portuguese)*
 
 - **`time_series_distance_pipeline.ipynb`**  
-  Notebook covering the core workflow: data processing, Lomb–Scargle period estimation, phase-folding and regression modeling.
+  Core notebook implementing the data pipeline, Lomb–Scargle period detection, phase-folding and regression modeling.
 
 - **`equation_43_derivation.ipynb`**  
-  Notebook with supporting mathematical and statistical derivations used in the distance estimation method.
+  Supporting notebook with mathematical and statistical derivations used in the distance estimation method.
+
+---
+
+## 📊 Visual Results
+
+Below are selected figures from the paper and notebooks illustrating the data pipeline and results:
+
+### Lomb–Scargle Periodogram
+*(Detecting periodicity in irregular time series)*  
+`![Lomb–Scargle](lomb_scargle_spectrum.png)`
+
+### Phase-Folded Time Series
+*(Feature engineering from periodic signals)*  
+`![Phase Folded](phase_folded_timeseries.png)`
+
+### Regression Model (Period–Luminosity Relation)
+*(Supervised regression on real data)*  
+`![Regression](regression_model.png)`
+
+### Validation vs Reference Dataset (OGLE-IV)
+*(Benchmarking against external results)*  
+`![Validation](model_validation.png)`
+
+### Probability Density (Kernel Density Estimation)
+*(Distribution of real-world measurements)*  
+`![Density](probability_density.png)`
 
 ---
 
 ## 🔗 Publication
 
-- NASA ADS / arXiv:2311.04470  
-  https://ui.adsabs.harvard.edu/abs/arXiv:2311.04470
+NASA ADS / arXiv:2311.04470  
+https://ui.adsabs.harvard.edu/abs/arXiv:2311.04470
 
 > Note: the original publication links to an older GitHub account.  
-> This repository is hosted on my current GitHub profile and includes the paper PDF and the accompanying notebooks.
+> This repository is hosted on my current GitHub profile and contains the paper PDF and the associated notebooks.
 
 ---
 
-## 🎯 Why this is relevant for Data / ML Engineering
+## 🎯 Why this is relevant for Data & Machine Learning Engineering
 
-This project demonstrates practical experience with:
+This project demonstrates real-world experience with:
 
-- Building data workflows for **large real-world datasets**
-- Working with **irregular and noisy time series**
-- Applying **statistical modeling and regression** to extract reliable parameters
-- Performing **validation against reference datasets**
-- Delivering results through **reproducible notebooks and documented outputs**
+- **Large, noisy datasets**
+- **Irregular time series**
+- **Data pipelines and preprocessing**
+- **Statistical modeling and regression**
+- **Model validation and benchmarking**
+- **Reproducible notebook-based analysis**
+
+These are core skills required for **Machine Learning Engineers, Data Scientists and Data Engineers** working with production data.
 
 ---
 
