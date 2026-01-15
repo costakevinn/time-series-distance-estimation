@@ -41,11 +41,11 @@ While the application is astrophysical, the workflow is directly transferable to
 - **`paper.pdf`**  
   Full paper published on **NASA ADS / arXiv:2311.04470** *(Portuguese)*
 
-- **`distancias_galacticas.ipynb`**  
-  Notebook covering the core workflow: data processing, Lomb–Scargle period estimation, and regression modeling.
+- **`time_series_distance_pipeline.ipynb`**  
+  Notebook covering the core workflow: data processing, Lomb–Scargle period estimation, phase-folding and regression modeling.
 
-- **`Solução da Equação 43.ipynb`**  
-  Notebook with supporting mathematical/statistical derivations used in the methodology.
+- **`equation_43_derivation.ipynb`**  
+  Notebook with supporting mathematical and statistical derivations used in the distance estimation method.
 
 ---
 
