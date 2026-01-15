@@ -1,5 +1,5 @@
 # Time Series Distance Estimation  
-**Irregular time series analytics, data pipeline and statistical regression (NASA ADS / arXiv:2311.04470)**
+**Irregular time series, feature engineering and regression pipeline (NASA ADS / arXiv:2311.04470)**
 
 This repository contains the paper PDF and analysis notebooks for a project published on **NASA ADS (arXiv:2311.04470)** that implements a complete **time series and statistical modeling pipeline** using real observational data.
 
@@ -9,7 +9,7 @@ The paper is written in **Portuguese**, but the methods, algorithms and results 
 
 ## 🚀 Project Overview
 
-The goal of this project is to estimate physical distances from **large-scale, irregular time series data** by combining:
+The goal of this project is to build an end-to-end **time series and regression pipeline** that estimates physical distances from **large-scale, irregular observational data** by combining:
 
 - **Irregular time series processing**
 - **Period detection** using **Lomb–Scargle periodograms (Astropy)**
@@ -54,29 +54,29 @@ Although the application is astrophysical, the workflow directly maps to real-wo
 
 Selected figures from the paper and notebooks showing the data pipeline and model behavior.
 
-### Time Series → Frequency Transformation
+### Time Series → Frequency Transformation  
 *(Lomb–Scargle applied to irregular time series)*  
-`![Lomb–Scargle](figures/lomb_scargle_spectrum.png)`
+![Lomb–Scargle](figures/lomb_scargle_spectrum.png)
 
-### Feature Engineering from Periodic Data
+### Feature Engineering from Periodic Data  
 *(Phase-folded time series)*  
-`![Phase Folded](figures/phase_folded_timeseries.png)`
+![Phase Folded](figures/phase_folded_timeseries.png)
 
-### Regression Model on Real Data
+### Regression Model on Real Data  
 *(Period–luminosity relationship learned from 4,700+ samples)*  
-`![Regression](figures/regression_model.png)`
+![Regression](figures/regression_model.png)
 
-### Model Validation vs Reference Dataset
+### Model Validation vs Reference Dataset  
 *(Comparison with OGLE-IV benchmark)*  
-`![Validation](figures/model_validation.png)`
+![Validation](figures/model_validation.png)
 
-### Probability Distributions
+### Probability Distributions  
 *(Kernel density estimation of real measurements)*  
-`![Density](figures/probability_density.png)`
+![Density](figures/probability_density.png)
 
-### Model Response Curve
-*(How engineered features map to predicted distances)*  
-`![Model Response](figures/feature_to_target_mapping.png)`
+### Model Response Curve  
+*(How engineered features map to predicted target values in a regression model)*  
+![Model Response](figures/feature_to_target_mapping.png)
 
 ---
 
@@ -90,7 +90,7 @@ https://ui.adsabs.harvard.edu/abs/arXiv:2311.04470
 
 ---
 
-## 🎯 Why this is relevant for Data & Machine Learning Engineering
+## 🎯 Why this project is relevant for Data & Machine Learning roles
 
 This project demonstrates hands-on experience with:
 
@@ -101,8 +101,7 @@ This project demonstrates hands-on experience with:
 - **Data quality filtering**
 - **Benchmarking against external datasets**
 - **Reproducible Python pipelines**
-
-These are core skills required for **Machine Learning Engineers, Data Scientists and Data Engineers**.
+- **Production-style analytical workflow with real-world data**
 
 ---
 
