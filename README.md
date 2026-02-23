@@ -1,111 +1,188 @@
-# Time Series Distance Estimation  
-**Irregular time series, feature engineering and regression pipeline (NASA ADS / arXiv:2311.04470)**
+# 🚀 Time Series Distance Estimation
 
-This repository contains the paper PDF and analysis notebooks for a project published on **NASA ADS (arXiv:2311.04470)** that implements a complete **time series and statistical modeling pipeline** using real observational data.
+**Irregular Time Series Processing and Regression Pipeline (NASA ADS / arXiv:2311.04470)**
 
-The paper is written in **Portuguese**, but the methods, algorithms and results follow standard practices in **data science, time series analytics and regression modeling**.
+This repository contains the published paper and implementation notebooks for a large-scale time series modeling project available on NASA ADS (arXiv:2311.04470).
 
----
+The project implements a complete end-to-end analytical pipeline for extracting structured features from irregular observational time series and estimating physical distances using regression modeling.
 
-## 🚀 Project Overview
-
-The goal of this project is to build an end-to-end **time series and regression pipeline** that estimates physical distances from **large-scale, irregular observational data** by combining:
-
-- **Irregular time series processing**
-- **Period detection** using **Lomb–Scargle periodograms (Astropy)**
-- **Phase-folding and feature extraction**
-- **Supervised regression modeling** (period–luminosity relationship)
-- **Quality filtering and outlier handling**
-- **Validation against reference datasets (OGLE-IV)**
-
-The dataset contains **4,700+ real samples** from the **OGLE-IV** catalog.
-
-Although the application is astrophysical, the workflow directly maps to real-world problems such as **financial time series, sensor data, monitoring systems and forecasting pipelines**.
+**Author:** Kevin Mota da Costa
+**Portfolio:** [https://costakevinn.github.io](https://costakevinn.github.io)
+**LinkedIn:** [https://linkedin.com/in/SEUUSER](https://linkedin.com/in/SEUUSER)
 
 ---
 
-## 🧠 Methods and Tools
+## 🎯 Project Purpose
 
-- **Time Series Analysis (irregular sampling)**
-- **Lomb–Scargle Periodogram**
-- **Feature engineering from periodic signals**
-- **ETL and data preprocessing**
-- **Statistical regression** (SciPy `curve_fit`)
-- **Model validation and benchmarking**
-- **Kernel Density Estimation**
-- **Python** (NumPy, Pandas, SciPy, Astropy)
+The objective of this project was to design a robust time series and regression workflow capable of extracting meaningful patterns from large, noisy, irregularly sampled datasets.
+
+The pipeline integrates:
+
+* Irregular time series processing
+* Period detection using Lomb–Scargle (Astropy)
+* Phase-folding and feature engineering
+* Supervised regression modeling
+* Quality filtering and outlier handling
+* Validation against external reference datasets (OGLE-IV)
+
+Although the application is astrophysical, the workflow directly translates to financial time series, sensor monitoring, industrial analytics, and forecasting systems.
+
+---
+
+## 🧠 System Architecture
+
+The analytical workflow follows a structured lifecycle:
+
+Raw irregular time series
+→ Period detection (Lomb–Scargle)
+→ Frequency transformation
+→ Phase-folding
+→ Feature extraction
+→ Regression modeling
+→ Distance estimation
+→ Benchmark validation
+
+This structure mirrors production-grade time series engineering pipelines.
+
+---
+
+## 📊 Dataset
+
+* 4,700+ real observational samples
+* OGLE-IV reference catalog
+* Irregular sampling
+* Heteroscedastic measurement noise
+
+The project includes statistical validation against benchmark datasets to ensure predictive reliability.
+
+---
+
+## 🔬 Methods & Techniques
+
+* Irregular time series analysis
+* Lomb–Scargle periodogram (Astropy)
+* Phase-folding of periodic signals
+* Feature engineering from temporal structure
+* Statistical regression (SciPy `curve_fit`)
+* Kernel Density Estimation
+* Outlier filtering and quality control
+* Benchmark validation
+
+---
+
+## 📈 Visual Results
+
+### Time Series → Frequency Transformation
+
+*(Lomb–Scargle applied to irregular data)*
+
+![Lomb–Scargle](figures/lomb_scargle_spectrum.png)
+
+---
+
+### Feature Engineering from Periodic Data
+
+*(Phase-folded time series)*
+
+![Phase Folded](figures/phase_folded_timeseries.png)
+
+---
+
+### Regression Model on 4,700+ Samples
+
+*(Period–luminosity relationship)*
+
+![Regression](figures/regression_model.png)
+
+---
+
+### Model Validation vs Reference Dataset
+
+*(Comparison with OGLE-IV benchmark)*
+
+![Validation](figures/model_validation.png)
+
+---
+
+### Probability Density Estimation
+
+![Density](figures/probability_density.png)
+
+---
+
+### Feature-to-Target Mapping
+
+![Model Response](figures/feature_to_target_mapping.png)
 
 ---
 
 ## 📂 Repository Contents
 
-- **`docs/paper.pdf`**  
-  Full scientific paper published on **NASA ADS (arXiv:2311.04470)** *(Portuguese)*
+* `docs/paper.pdf`
+  Published scientific paper (Portuguese)
 
-- **`notebooks/time_series_distance_pipeline.ipynb`**  
-  Core notebook implementing the full pipeline: data loading, Lomb–Scargle period detection, phase-folding, regression and distance estimation.
+* `notebooks/time_series_distance_pipeline.ipynb`
+  Complete pipeline: loading, period detection, feature engineering, regression, validation
 
-- **`notebooks/equation_43_derivation.ipynb`**  
-  Supporting notebook with mathematical and statistical derivations used in the distance estimation model.
-
----
-
-## 📊 Visual Results
-
-Selected figures from the paper and notebooks showing the data pipeline and model behavior.
-
-### Time Series → Frequency Transformation  
-*(Lomb–Scargle applied to irregular time series)*  
-![Lomb–Scargle](figures/lomb_scargle_spectrum.png)
-
-### Feature Engineering from Periodic Data  
-*(Phase-folded time series)*  
-![Phase Folded](figures/phase_folded_timeseries.png)
-
-### Regression Model on Real Data  
-*(Period–luminosity relationship learned from 4,700+ samples)*  
-![Regression](figures/regression_model.png)
-
-### Model Validation vs Reference Dataset  
-*(Comparison with OGLE-IV benchmark)*  
-![Validation](figures/model_validation.png)
-
-### Probability Distributions  
-*(Kernel density estimation of real measurements)*  
-![Density](figures/probability_density.png)
-
-### Model Response Curve  
-*(How engineered features map to predicted target values in a regression model)*  
-![Model Response](figures/feature_to_target_mapping.png)
+* `notebooks/equation_43_derivation.ipynb`
+  Supporting statistical derivations and modeling details
 
 ---
 
 ## 🔗 Publication
 
-NASA ADS / arXiv:2311.04470  
-https://ui.adsabs.harvard.edu/abs/arXiv:2311.04470
+NASA ADS / arXiv:2311.04470
+[https://ui.adsabs.harvard.edu/abs/arXiv:2311.04470](https://ui.adsabs.harvard.edu/abs/arXiv:2311.04470)
 
-> Note: the original publication links to an older GitHub account.  
-> This repository is hosted on my current GitHub profile and contains the paper PDF and the associated notebooks.
-
----
-
-## 🎯 Why this project is relevant for Data & Machine Learning roles
-
-This project demonstrates hands-on experience with:
-
-- **Large, noisy real-world datasets**
-- **Irregular time series processing**
-- **Feature engineering**
-- **Supervised regression models**
-- **Data quality filtering**
-- **Benchmarking against external datasets**
-- **Reproducible Python pipelines**
-- **Production-style analytical workflow with real-world data**
+Note: The original publication links to an older GitHub account.
+This repository hosts the updated implementation and paper under my current profile.
 
 ---
 
-## 👤 Author
+## 🛠 Tech Stack
 
-**Kevin Mota da Costa**  
-Time Series • Statistical Modeling • Data Pipelines • Python
+### Programming
+
+Python
+
+### Data & Scientific Computing
+
+* NumPy
+* Pandas
+* SciPy
+* Astropy
+
+### Time Series & Statistics
+
+* Lomb–Scargle periodogram
+* Kernel Density Estimation
+* Statistical regression
+* Outlier filtering
+
+### Visualization
+
+* Matplotlib
+
+---
+
+## 🔬 Capabilities Demonstrated
+
+* Large-scale irregular time series processing
+* Feature engineering from periodic signals
+* Regression modeling on noisy data
+* Data validation against benchmark datasets
+* Analytical reproducibility
+* Structured ML-style pipeline design
+
+---
+
+## 🌐 Portfolio
+
+This project is part of my Machine Learning portfolio:
+👉 [https://costakevinn.github.io](https://costakevinn.github.io)
+
+---
+
+## License
+
+MIT License — see `LICENSE` for details.
