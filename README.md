@@ -7,8 +7,10 @@ This repository contains the published paper and implementation notebooks for a 
 The project implements a complete end-to-end analytical pipeline for extracting structured features from irregular observational time series and estimating physical distances using regression modeling.
 
 **Author:** Kevin Mota da Costa
+
 **Portfolio:** [https://costakevinn.github.io](https://costakevinn.github.io)
-**LinkedIn:** [https://linkedin.com/in/SEUUSER](https://linkedin.com/in/SEUUSER)
+
+**LinkedIn:** [https://linkedin.com/in/costakevinnn](https://linkedin.com/in/costakevinnn)
 
 ---
 
